@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Using SVG</h1>
+<svg width="900" height="400">
+ <ellipse cx="500" cy="90" rx="60" ry="40" stroke="black"
+stroke-width="1"fill="cyan" />
+<line x1="500" y1="130" x2="500" y2="300" style="stroke:black;stroke-width:1" />
+<line x1="500" y1="230" x2="550" y2="280" style="stroke:black;stroke-width:1" />
+<line x1="500" y1="230" x2="450" y2="280" style="stroke:black;stroke-width:1" />
+</svg>
+<h1>Using Canvas</h1>
+<canvas width="900" height="400" id="fig"></canvas>
+<script>
+    var canvas = document.getElementById("fig");
+    var ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    ctx.fillStyle = "cyan";
+    ctx.ellipse(500,90,60,40,0,0,2*Math.PI);
+    ctx.fill();
+    ctx.moveTo(500,130);
+    ctx.lineTo(500,300);
+    ctx.moveTo(500,230);
+    ctx.lineTo(550,280);
+    ctx.moveTo(500,230);
+    ctx.lineTo(450,280);
+    ctx.stroke();
+</script>
+</body>
+</html>

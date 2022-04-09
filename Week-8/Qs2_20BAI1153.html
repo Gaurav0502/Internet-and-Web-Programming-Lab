@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Digits of Number</title>
+        <link rel="stylesheet" href="Qs2.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("#submit").click(function(){
+                  let n = parseInt(document.getElementById("num").value);
+                  let max_even = 0;
+                  let max_odd = 0;
+                  while(n != 0)
+                  {
+                      let d = n%10;
+
+                      if(d%2 == 0)
+                      {
+                          if(max_even < d)
+                          {
+                              max_even = d;
+                          }
+                      }
+                      else
+                      {
+                          if(max_odd < d)
+                          {
+                              max_odd = d;
+                          }
+                      }
+                      n = parseInt(n/10);
+                  }
+
+                  if(max_odd > max_even)
+                  {
+                      throw new Error("The maximum odd number is greater than the maximum even number!!!");
+                  }
+                  else
+                  {
+                      alert("Maximum Even number = "+max_even+"\n"+"Maximum Odd number = "+max_odd);
+                  }
+              });
+            });
+        </script>
+    </head>
+    <body>
+      <div>
+       <h2>Max Even and Odd</h2>
+       <form action="#">
+        <table>
+            <tr>
+                <td>Number (i.e. Integer) :</td>
+                <td><input type="number" id="num" required></td>
+            </tr>  
+        </table>
+            <td><input type="submit" id="submit" value="Submit"></td>
+       </form>
+      </div>
+    </body>
+</html>

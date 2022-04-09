@@ -1,0 +1,63 @@
+table
+{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+input
+{
+    width: 220px;
+    height: 30px;
+}
+
+h2
+{
+    margin-left: 135px;
+}
+
+div
+{
+    margin-left: 720px;
+    margin-top: 250px;
+}
+
+table thead tr
+{
+    color: #ffffff;
+    text-align: left;
+}
+
+table th,
+table td 
+{
+    padding: 12px 15px;
+    font-size: 20px;
+}
+
+table tbody tr 
+{
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) 
+{
+    background-color: #f3f3f3;
+}
+
+#submit
+{
+    margin-left: 150px;
+    width: 200px;
+    height: 40px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 5px;
+    border-width: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    cursor: pointer;
+}

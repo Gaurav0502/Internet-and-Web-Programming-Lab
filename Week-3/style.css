@@ -1,0 +1,64 @@
+.main,.x,.Lang
+{
+    border: 3px solid #fff;
+    display: flex;
+}
+.projects,.aboutme,.interests,.achievements,.events,.s1,.s2
+{
+    flex: 1;
+}
+.projects
+{
+    border-radius: 4px;
+}
+.aboutme
+{
+    border-radius: 4px;
+}
+.interests
+{
+    border-radius: 4px;
+}
+.achievements
+{
+    border-radius: 4px;
+}
+.events
+{
+    border-radius: 4px;
+}
+.Lang
+{
+    border-radius: 4px;
+}
+progress
+{
+    float: right;
+}
+.heading
+{
+    text-align: center;
+    color: #fff;
+}
+
+.s1
+{
+    width: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.s2
+{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+body
+{
+    background-color: black;
+}
+
+div
+{
+    background-color: white;
+}

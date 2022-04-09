@@ -1,0 +1,46 @@
+button
+{
+    margin-left: 190px;
+    margin-top: 80px;
+    width: 400px;
+    height: 40px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 5px;
+    border-width: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+table
+{
+    border-width: 8px;
+    border-color: blueviolet;
+    border-style: solid;
+    margin-left: 10px;
+}
+
+#shift
+{
+    margin-left: 100px;
+}
+
+p
+{
+    font-size: 40px;
+    border-radius: 5px;
+    border-color: red;
+    border-style: dotted;
+    border-width: 5px;
+}
+
+.left, .right 
+{ 
+    display:inline;
+}
+
+.right
+{
+    margin-left: 100px;
+}

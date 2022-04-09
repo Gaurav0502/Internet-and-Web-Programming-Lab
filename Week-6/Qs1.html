@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+        <link rel="stylesheet" href="Qs1.css">
+        <script src="./validate.js"></script>
+    </head>
+    <body>
+        <h2>create a new account</h2>
+        <form action="#" onsubmit="return validate();">
+           <table>
+               <tr>
+                   <td class="labels" id="emaillab">Your Email</td>
+                   <td>
+                       <input type="email" id="email" required>
+                       <div class="error" id="erremail"></div>
+                   </td>
+                   <td><img src="./close.png" id="invemail" hidden></td>
+               </tr>
+               <tr>
+                   <td class="labels" id="cemaillab">Confirm Email</td>
+                   <td>
+                       <input type="email" id="cemail" required>
+                       <div class="error" id="errcemail"></div>
+                    </td>
+                   <td><img src="./close.png" id="invcemail" hidden></td>
+               </tr>
+               <tr>
+                   <td class="labels">Country</td>
+                   <td>
+                       <select id="country">
+                           <option>United States</option>
+                           <option>India</option>
+                       </select>
+                   </td>
+               </tr>
+               <tr>
+                   <td class="labels" id="ziplab">Zip Code</td>
+                   <td>
+                       <input type="number" id="zipcode" id="invzip" required>
+                       <div class="error" id="errzip"></div>
+                    </td>
+                   <td><img src="./close.png" id="invzip" hidden></td>
+               </tr>
+               <tr>
+                   <td class="labels" id="passlab">Password</td>
+                   <td>
+                       <input type="password" id="password" required>
+                       <div class="error" id="errpass"></div>
+                    </td>
+                   <td><img src="./close.png" id="invpass" hidden></td>
+               </tr>
+               <tr>
+                   <td class="labels" id="cpasslab">Confirm Password</td>
+                   <td>
+                       <input type="password" id="cpassword" required>
+                       <div class="error" id="errcpass"></div>
+                   </td>
+                   <td><img src="./close.png" id="invcpass" hidden></td>
+               </tr>
+                       
+           </table>
+           <br>
+           <input type="checkbox" id="tnc" required>
+           <label for="tnc" class="labels" id="tnclabel">Yes,I agree to the <b>Terms of Use</b></label>
+           <br>
+           <input type="submit" id="signup" value="Sign Up">
+        </form>
+    </body>
+</html>

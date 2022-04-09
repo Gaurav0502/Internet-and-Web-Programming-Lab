@@ -1,0 +1,35 @@
+.middle
+{
+    position: absolute;
+    top:40%;
+    left:45%;
+}
+.right
+{
+    position: absolute;
+    top:40%;
+    left: 90%;
+}
+.left
+{
+    position: absolute;
+    top:40%;
+    left: 5%;
+}
+.middle,.right,.left
+{
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: black;
+}
+.hdr
+{
+    position: absolute;
+    left: 40%;
+}
+.ftr
+{
+    position: absolute;
+    top: 95%;
+}

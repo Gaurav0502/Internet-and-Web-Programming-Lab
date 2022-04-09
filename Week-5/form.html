@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>College Admission Form</title>
+        <link rel="stylesheet" href="hk.css">
+        <script src="validation.js"></script>
+    </head>
+    <body>
+        <div><b>College Admission Form</b></div>
+        <form action="result.html" onsubmit="return validate();">
+         <table cellpadding="20" cellspacing="5px">
+           <tr>
+               <td class="label">First Name</td>
+               <td><input type="text" id="fname" required></td>
+               <td class="label">Middle Name</td>
+               <td><input type="text" id="mname" required></td>
+               <td class="label">Last Name</td>
+               <td><input type="text" id="lname" required></td>
+           </tr>
+           <tr>
+               <td class="label">Gender</td>
+               <td>
+                   <select id="gender">
+                       <option>Male</option>
+                       <option>Female</option>
+                       <option>Other</option>
+                   </select>
+               </td>
+               <td class="label">Email Address</td>
+               <td><input type="email" id="email" required></td>
+               <td class="label">Mobile Number</td>
+               <td><input type="number" id="mobno" required></td>
+           </tr>
+           <tr>
+               <td class="label">Country</td>
+               <td>
+                   <select id="country">
+                       <option>India</option>
+                       <option>United States of America</option>
+                   </select>
+                </td>
+               <td class="label">City of Residence(if Indian)</td>
+               <td>
+                   <select id="City">
+                       <option>Mumbai</option>
+                       <option>Chennai</option>
+                       <option>Delhi</option>
+                       <option>Bangalore</option>
+                       <option>Kolkata</option>
+                    </select>
+                </td>
+                <td class="label">Pincode</td>
+                <td><input type="number" id="pincode" required></td>
+           </tr>
+           <tr>
+               <td class="label">Street Address Line 1</td>
+               <td><input id="text" required></td>
+               <td class="label">Street Address Line 2</td>
+               <td><input id="text" required></td>
+               <td class="label">Date of Birth</td>
+               <td><input type="date" id="dob" required></td>
+           </tr>
+           <tr>
+               <td class="label">JEE Percentile</td>
+               <td><input type="number" id="jee" step=".0000001" required></td>
+               <td class="file"><b>JEE Score Card</b></td>
+               <td colspan="2" class="file"><input type="file" id="jeeproof" required></td>
+           </tr>
+           <tr>
+               <td class="label">12th Board Percentage</td>
+               <td><input type="number" id="12thmks" step=".01" required></td>
+               <td class="file"><b>12th Board Marksheet</b></td>
+               <td colspan="2" class="file"><input type="file" id="12thproof" required></td>
+           </tr>
+           <tr>
+               <td colspan="6"><input type="submit" value="Register" id="sbtn"></td>
+           </tr>
+        </table>
+    </form>
+    </body>
+</html>

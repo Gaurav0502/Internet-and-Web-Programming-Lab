@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hide and Show using JQuery</title>
+<link rel="stylesheet" href="Qs1.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+  $("#hideall").click(function(){
+    $("p").hide();
+  });
+  $("#showall").click(function(){
+    $("p").show();
+  });
+});
+
+$(document).ready(function(){
+  $("#hidea").click(function(){
+    $("#p2").hide();
+  });
+  $("#showa").click(function(){
+    $("#p2").show();
+  });
+});
+
+$(document).ready(function(){
+  $("#hidesome").click(function(){
+    $(".another").hide();
+  });
+  $("#showsome").click(function(){
+    $(".another").show();
+  });
+});
+
+
+</script>
+</head>
+<body>
+<table cellspacing="30px" cellpadding="30px">
+  <tr>
+    <td><p class="left">This Paragraph has no id or class.</p></td>
+    <td><p class="right">This Paragraph has no id or class.</p></td>
+  </tr>
+  <tr>
+    <td><p id="p1" class="left">This Paragraph has id = p1 but no class.</p></td>
+    <td><p id="p2" class="right">This Paragraph has id = p2 but no class.</p></td>
+  </tr>
+
+  <tr>
+    <td><p class="another">This Paragraph has no id but class = another</p></td>
+    <td><p class="another" id="shift">This Paragraph has no id but class = another</p></td>
+  </tr>
+</table>
+
+<button id="hideall">Hide all paragraphs</button>
+<button id="showall">Show all paragraphs</button>
+
+<button id="hidea">Hide the paragraph with id = p2</button>
+<button id="showa">Show the paragraph with id = p2</button>
+
+<button id="hidesome">Hide all the paragraphs with class as another</button>
+<button id="showsome">Show all the paragraphs with class as another</button>
+
+</body>
+</html>

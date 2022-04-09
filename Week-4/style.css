@@ -1,0 +1,57 @@
+.newspaper{
+  column-count: 3;
+  text-align:justify;
+}
+
+body
+{
+    color: #2f2f2f;
+    background-color: #f9f7f1;
+}
+
+header
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 20px;
+    
+    text-align: center;
+}
+.date
+{
+  text-transform: uppercase;
+  border-bottom: 2px solid #2f2f2f;
+  border-top: 2px solid #2f2f2f;
+  padding: 12px 0 12px 0;
+  text-align: center;
+} 
+
+p
+{
+  font-family: "Times New Roman", Times, serif;
+}
+
+.a1:first-of-type:first-letter {
+  font-size:3em;
+  float: left;
+  /*adjust the following properties at your own risk*/
+  line-height: 50%;
+  margin:0.1em 0.1em 0.1em -0.05em;
+}
+
+footer
+{
+  font-family: "Times New Roman", Times, serif;
+  text-align: end;
+  padding: 1px 1px 1px 0;
+}
+
+.newspaper img{
+  height:auto;
+  width:100%;
+}
+
+.newspaper h2{
+ column-span: all;
+}

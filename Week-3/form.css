@@ -1,0 +1,44 @@
+body,caption 
+{
+    font-family: 'lato', sans-serif;
+    background-color: #FFED86;
+    float: right;
+}
+
+video{
+    float: left;
+}
+
+input
+{
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+table
+{ 
+    border-spacing: 1; 
+    border-collapse: collapse; 
+    background:white;
+    border-radius:6px;
+    overflow:hidden;
+    max-width:800px; 
+    width:100%;
+    margin:0 auto;
+    margin-left: 500px;
+    position:relative;
+    float: right;
+    
+*{ position:relative }
+    
+td,th{ padding-left:8px}
+  
+thead tr
+{ 
+    height:60px;
+    background:#FFED86;
+    font-size:16px;
+}
+    
+ 

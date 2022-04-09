@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Newspaper</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <script>
+           function yesterday()
+           {
+                let x = document.getElementById("headlines");
+                x.innerHTML = "<b>Yesterday's headlines</b>";
+
+                let p1 = document.getElementById("p1");
+                p1.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aliquam porta dapibus metus, nec vestibulum metus gravida nec. In nulla massa, vehicula ut suscipit in, interdum eget risus. Maecenas a ante pellentesque, efficitur nisl a, facilisis ligula. Vivamus eget dui nisl. Maecenas semper sem erat, sed luctus quam rutrum non. Proin volutpat risus tortor, in consectetur odio elementum at. Maecenas vestibulum libero ultrices luctus vestibulum. Nunc et blandit metus. Praesent varius purus quis facilisis porta. Sed et lobortis ligula. Suspendisse vel nunc tempus, vestibulum justo nec, ultricies augue. Phasellus mattis magna ut nisl laoreet eleifend. Etiam egestas purus id libero tincidunt consectetur. Vivamus tempor velit semper ligula mattis volutpat. Nam rutrum, nulla id fringilla auctor, tortor ligula eleifend ligula, sit amet vestibulum orci tortor ut purus.";
+
+                let p2 = document.getElementById("p2");
+                p2.innerHTML = "Sed venenatis diam magna, at ornare nulla tincidunt sed. Donec eget nunc in lectus sagittis ultricies. Nunc consectetur suscipit bibendum. Integer sit amet dolor ullamcorper elit pellentesque mollis vitae a odio. Donec vestibulum justo et tortor porttitor dictum. Phasellus id sagittis nibh, vel tempus ex. Mauris vulputate lorem quis mi eleifend pharetra. Suspendisse eu luctus lectus. Proin dapibus, nibh viverra dignissim suscipit, lacus augue sagittis augue, ac volutpat lorem dui sed justo."
+
+                let p3 = document.getElementById("p3");
+                p3.innerHTML = "Nam dapibus ultrices ornare. Praesent tristique, arcu non pretium vestibulum, elit sem tincidunt mauris, sit amet malesuada nisl augue at eros. Vivamus elit quam, sagittis in ullamcorper vestibulum, mattis quis lacus. Ut ornare leo nibh, vitae commodo metus pulvinar finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis, sapien vel pharetra tempor, tellus dolor efficitur libero, tristique faucibus lorem lorem non nisl. Integer fringilla dui diam, lobortis tincidunt risus varius non. Sed pellentesque neque ut suscipit mollis. In sit amet vulputate leo. Curabitur interdum commodo quam placerat lobortis. Donec varius, dolor non consequat molestie, libero diam iaculis metus, vulputate sodales diam eros eget purus. Mauris at pharetra risus. In in leo ut purus malesuada gravida vitae laoreet nisl. Etiam blandit mollis viverra.";
+               
+                let p4 = document.getElementById("p4");
+                p4.innerHTML = "Donec in lobortis massa. Praesent augue ex, consequat a tristique consectetur, sodales scelerisque mauris. Pellentesque nunc lacus, convallis sed elementum sed, porttitor a purus. Duis vel arcu eget metus vulputate euismod. Phasellus efficitur metus quis enim tincidunt, et vestibulum dolor finibus. Sed quis elementum ligula, a feugiat magna. Nulla lorem sem, lacinia eu magna sit amet, lobortis euismod felis. Morbi pellentesque ante ipsum, a dapibus justo maximus at. Pellentesque eget nisi hendrerit, consectetur elit at, eleifend turpis. Nulla id porttitor elit. Donec non quam vitae purus rutrum porttitor. Nunc tristique sapien at mauris porta pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+
+                let p5 = document.getElementById("p5");
+                p5.innerHTML = "Nulla finibus tellus magna, vitae tempor orci pulvinar nec. Aenean ex diam, auctor eget imperdiet eu, volutpat ac justo. Nulla pulvinar laoreet nibh, sed imperdiet erat mollis in. Ut velit arcu, luctus et semper ac, viverra ac risus. Cras sit amet diam eget est tempor imperdiet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus dolor sapien, dictum ut purus sed, egestas pellentesque eros. Donec pulvinar vel dui quis venenatis. Ut nec accumsan velit. Vestibulum volutpat efficitur justo, in gravida dui dignissim vulputate. Nullam aliquet pretium erat, sit amet tristique neque pretium id. Praesent tristique ipsum porttitor quam consequat, vitae dapibus erat cursus. Etiam vitae pharetra tortor. Quisque cursus finibus sapien, ac consequat nulla.";
+
+                let p6 = document.getElementById("p6");
+                p6.innerHTML = "Maecenas et fringilla elit. Aliquam luctus dapibus volutpat. Donec ullamcorper risus pretium eleifend pellentesque. Proin fermentum dolor quis sagittis accumsan. Praesent dolor erat, lobortis et pellentesque vitae, molestie at eros. Mauris ornare, dui non fermentum lacinia, quam velit pulvinar diam, sed fermentum massa neque ut urna. Vivamus dui nibh, scelerisque nec erat non, mattis laoreet leo. Pellentesque volutpat lectus odio, vel dignissim felis consequat vitae. Vivamus ligula mi, mollis nec condimentum sed, tempus eget urna. Etiam imperdiet augue ut est dictum cursus. Curabitur sollicitudin nulla nec tortor pulvinar pharetra. Nunc sollicitudin urna lacinia risus ultrices, quis accumsan ante interdum. Aenean rutrum suscipit odio, eu scelerisque velit sollicitudin tincidunt.";
+
+                let p7 = document.getElementById("p1");
+                p7.innerHTML = "Mauris eu nunc tellus. Nam purus mauris, ultricies at imperdiet et, accumsan ac leo. Proin gravida scelerisque libero nec suscipit. Curabitur semper risus sed ultrices suscipit. Quisque luctus dignissim neque semper placerat. Praesent maximus felis in lorem sollicitudin, at suscipit tellus tincidunt. Etiam libero risus, ornare eu elit nec, porta iaculis nulla. In hac habitasse platea dictumst. In sollicitudin egestas eros, vitae convallis risus.";
+
+                let p8 = document.getElementById("p8");
+                p8.innerHTML = "Quisque luctus elementum urna, tristique molestie purus condimentum a. Sed eleifend, mauris vel lacinia consequat, ipsum ipsum bibendum dui, vitae fermentum nulla tortor sit amet elit. Ut dignissim luctus purus at sagittis. Aliquam erat volutpat. Praesent tempor convallis tincidunt. In hendrerit suscipit consequat. Mauris iaculis, tortor non lobortis pulvinar, lacus ante aliquet justo, a vehicula sem orci ac tortor. Morbi pellentesque tincidunt lacus ut dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin faucibus congue purus at tempus. Donec sagittis ullamcorper ante. Morbi porttitor et elit sit amet tristique. Etiam sem leo, fermentum sed lacinia id, pellentesque ac arcu. Praesent quis facilisis lacus, eget condimentum turpis. Proin id velit in tellus fringilla ultricies sed ac nisi.";
+            }
+
+           
+           function twoDaysBack()
+           {
+                let x = document.getElementById("headlines");
+                x.innerHTML = "<b>Two Days Back's headlines</b>";
+
+                let p1 = document.getElementById("p1");
+                p1.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla, velit eget luctus tincidunt, ipsum odio interdum elit, eget malesuada mi turpis sit amet libero. Nam pretium feugiat metus sit amet imperdiet. Phasellus a consectetur magna. Phasellus at volutpat massa. Quisque faucibus ullamcorper massa id tincidunt. Mauris scelerisque sit amet lectus finibus iaculis. Vestibulum est eros, lobortis nec sapien eu, pharetra dignissim nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur non auctor turpis. Curabitur sed sem eget massa rutrum finibus. Curabitur sollicitudin risus nec nibh aliquam, ultrices dignissim nulla suscipit. Proin pulvinar sollicitudin fringilla. Aenean efficitur fermentum finibus. Donec id tellus feugiat, sollicitudin lorem vitae, tristique leo. Proin vehicula, ante nec ultricies commodo, ligula nisl convallis mauris, at vehicula risus lacus ut felis.";
+
+                let p2 = document.getElementById("p2");
+                p2.innerHTML = "Mauris cursus nulla quis lorem ullamcorper lobortis non ut eros. Proin est quam, volutpat vel urna eget, tincidunt elementum arcu. Proin a rutrum magna. Vestibulum in ex a sapien tincidunt suscipit ut at dolor. Curabitur non risus dignissim, tincidunt mi consectetur, gravida ex. Phasellus lacinia nulla sed felis gravida, et euismod dui aliquet. Fusce consequat risus non tristique lobortis. Aenean eget mi sit amet metus porta egestas. Vestibulum ut fringilla enim. Quisque nisl metus, efficitur et placerat id, pretium eu neque. Donec sit amet facilisis tellus. Suspendisse vel lacus nisi."
+
+                let p3 = document.getElementById("p3");
+                p3.innerHTML = "Donec nec quam turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent risus lorem, imperdiet et mauris vitae, volutpat dignissim ex. In vel tortor pretium, pulvinar turpis et, tempor ipsum. Sed id aliquam sapien. Vestibulum hendrerit metus eget enim scelerisque, nec malesuada metus molestie. Aenean vitae lacus nec lacus accumsan vestibulum ut pharetra dui. Cras eu ipsum pulvinar, placerat eros non, euismod diam. Aliquam mauris mauris, ultrices nec accumsan eu, mollis vitae sem.";
+               
+                let p4 = document.getElementById("p4");
+                p4.innerHTML = "Ut sed tellus at erat tempus laoreet. Nam et nulla finibus, interdum sapien fringilla, rutrum enim. Pellentesque felis libero, elementum in blandit quis, aliquet ac tortor. Donec mauris magna, consectetur non imperdiet mattis, ultrices et eros. Vivamus efficitur ipsum molestie, commodo justo sit amet, suscipit turpis. Mauris ornare ipsum nec felis consequat, eu vestibulum magna maximus. Nam malesuada ex eget accumsan tincidunt. Quisque at nunc sapien. Donec ornare semper molestie. Sed mi odio, tincidunt quis ipsum in, sollicitudin venenatis ante.";
+
+                let p5 = document.getElementById("p5");
+                p5.innerHTML = "Sed felis diam, imperdiet eget augue sit amet, mattis scelerisque eros. Maecenas eu mi id lectus laoreet cursus. Sed lorem metus, consequat vitae pharetra suscipit, bibendum eget eros. Donec in tincidunt dui. In eget enim in nunc efficitur tincidunt vitae a odio. Integer sed accumsan nulla. Donec mollis quis mi sit amet varius. Integer vitae tortor quis odio laoreet ornare. Phasellus mi erat, pharetra vitae est quis, lacinia suscipit mauris. Aliquam accumsan arcu vel quam consectetur feugiat. Cras finibus turpis est, vitae pretium odio euismod et. Aenean sit amet sem quam. Duis fermentum justo maximus, tincidunt metus quis, luctus arcu. Morbi viverra ultrices urna.";
+
+                let p6 = document.getElementById("p6");
+                p6.innerHTML = "Nulla vitae arcu sapien. Nulla luctus condimentum nibh, tristique ultricies mi efficitur vitae. Fusce quis dui vitae arcu blandit bibendum at ut quam. Donec mi ipsum, lacinia sed porta ut, volutpat iaculis ligula. Cras tortor sem, viverra nec blandit sit amet, blandit ac leo. In et leo ex. Mauris at auctor est. Nam efficitur orci nec est viverra tincidunt. Curabitur eget faucibus erat. Nullam faucibus magna sapien, convallis ullamcorper magna efficitur ut. In vitae velit eu nunc imperdiet interdum. Nulla facilisi. Praesent ut purus auctor, tincidunt orci nec, vulputate nulla. Morbi id ultrices eros. Pellentesque eget aliquam elit, in pulvinar ipsum. Morbi id tempus diam.";
+
+                let p7 = document.getElementById("p1");
+                p7.innerHTML = "Proin nec erat in lacus porta posuere. Aliquam erat volutpat. Curabitur non fringilla tortor. Integer enim nulla, vehicula sed laoreet sed, tempus in enim. Vivamus pretium non elit et scelerisque. Pellentesque aliquet in ligula sed pulvinar. Phasellus auctor imperdiet magna, sit amet malesuada est rhoncus id. Mauris tincidunt vehicula enim vitae malesuada. Fusce fringilla nisi sed eleifend finibus. Nunc facilisis, velit et rutrum ullamcorper, odio arcu porta ex, quis ultricies odio lacus vitae ipsum. ";
+
+                let p8 = document.getElementById("p8");
+                p8.innerHTML = "Maecenas tristique euismod nisi. Donec porta aliquet purus. Ut feugiat enim suscipit elementum molestie. Aenean volutpat tellus quis dui varius varius. Nam a luctus urna, ut rhoncus metus. Vestibulum varius molestie ultrices. Pellentesque sed nisl sed erat elementum elementum.";
+           }
+
+           function ad()
+           {
+              let choice = parseInt(document.getElementById("adchoice").value);
+              console.log(choice);
+              let ad = document.getElementById("ad");
+
+              switch(choice)
+              {
+                 case 0 : ad.setAttribute("src","./cadburyAd.jpg");
+                          break;
+                 case 1 : ad.setAttribute("src","./crocsads.png");
+                          break;
+                 case 2 : ad.setAttribute("src","./datacampads.png");
+                          break;
+              }
+           }
+        </script>
+    </head>
+    <body>
+      <header>
+          <img src="./cadburyAd.jpg" alt="AD" height="665px" width="350px" id="ad">
+
+          <div class="pname"><h1>Times of India</h1></div>
+         <select id="adchoice" onchange="ad();">
+         <option>Choose the type of ad your want</option>
+         <option value="0">Chocolates</option>
+         <option value="1">Shoes</option>
+         <option value="2">Education</option>
+      </select>
+      </header>
+      <p class="date">Mumbai,Maharashtra Tuesday March 1,2022</p>
+      <button onclick="twoDaysBack();">Two days back</button>
+      <button onclick="yesterday();">Yesterday</button>
+      <button onclick="location.reload();">Today</button>
+      
+      <div class="newspaper">
+         <h1 id="headlines"><b>Lorem Ipsum</b></h1>
+         <p class="a1" id="p1">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper quam sed arcu feugiat pellentesque. Morbi mattis id nulla iaculis cursus. Integer neque risus, porttitor et congue et, iaculis ut purus. Mauris nec auctor ex. Vivamus ut tellus vitae nisi dictum aliquet at vitae arcu. Nulla tincidunt, turpis id aliquam feugiat, sem ligula fringilla nisl, in ultrices nulla tellus sit amet libero. Sed turpis eros, pretium sed massa sit amet, blandit congue augue. Sed dignissim varius ipsum, ut hendrerit ante tempor ac. Ut tempus suscipit nisi, vel mattis dui pretium nec. Proin rutrum est laoreet, suscipit enim vitae, viverra enim. Duis eu bibendum augue, ullamcorper auctor felis. Suspendisse eget erat vehicula, viverra enim sed, tincidunt elit. Nullam finibus convallis mauris et aliquet. Nullam nulla dui, tristique nec risus sit amet, tristique gravida risus. Vestibulum in sem facilisis diam lobortis egestas vitae a nunc. Mauris a mattis arcu, a imperdiet mauris.
+         </p>
+         <p id="p2">
+         Curabitur tempus rutrum purus, et dapibus tortor luctus posuere. Ut enim lacus, congue sollicitudin sodales a, finibus a odio. Nullam auctor quam vitae fermentum interdum. Nunc aliquet tortor ac pretium aliquet. Nunc eu nulla dui. Sed volutpat risus vel dignissim imperdiet. Aliquam in posuere elit. Curabitur venenatis feugiat elit, sit amet posuere quam dignissim vitae. Quisque eget congue eros. Curabitur molestie, libero a imperdiet sagittis, mauris magna congue purus, ut auctor neque turpis at enim. Nam elit dolor, tincidunt ac leo vitae, pellentesque rhoncus sem. Nulla facilisi. Nam aliquet, elit at euismod mattis, dui nisi ultrices nunc, eu elementum ante enim non purus.
+         </p>
+         <p id="p3">
+         Mauris mi nunc, accumsan vitae consequat sed, maximus vitae neque. Nulla aliquet lorem in ante iaculis porta non ut sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque egestas lobortis massa dapibus pellentesque. Nunc semper fringilla turpis. Donec tortor urna, tincidunt non sodales eget, elementum eget orci. Ut tempor turpis quis nunc venenatis sollicitudin vitae id nibh. Duis a sodales ex. Sed aliquam sodales pellentesque. Praesent tincidunt facilisis nulla eget eleifend. Quisque rhoncus ex eget eros pretium convallis. Vestibulum vel odio facilisis, suscipit ipsum eget, lobortis est. Cras sem erat, pharetra eget turpis at, dapibus accumsan neque. Ut sodales dolor pretium, mollis diam id, feugiat dolor. Suspendisse pellentesque, ipsum quis posuere consequat, ipsum elit hendrerit orci, eget tempus elit enim vel mauris. Phasellus elementum aliquet quam quis vestibulum.
+         </p>
+         <p id="p4">
+         Vivamus vestibulum, orci ut posuere consequat, leo mi ornare tortor, quis consectetur nibh odio a ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam pharetra, dolor vitae placerat molestie, urna mauris malesuada metus, sit amet mattis eros ante vel dolor. Praesent scelerisque tristique nulla, ac tristique libero convallis et. Aliquam eget neque vulputate, mattis lectus ut, mattis mauris. Pellentesque ut pharetra magna. Duis fermentum sagittis egestas. Fusce volutpat augue vel mauris sagittis, non tempus augue vehicula. Etiam suscipit tempor cursus. Ut laoreet pellentesque elit, eget blandit ante pulvinar ac. Donec non urna a lectus ultrices bibendum a non ante.
+         </p>
+         <h1><b>Lorem Ipsum</b></h1>
+         <p class="a2" id="p5">
+         Vestibulum condimentum elit id rhoncus efficitur. Nullam mi sem, dictum eu sem viverra, interdum hendrerit nisl. Aliquam posuere, leo eu maximus ultrices, nunc ex dignissim leo, quis dignissim tellus nunc et purus. Sed non dolor sollicitudin, hendrerit urna quis, pretium ligula. Mauris eget porttitor lacus. Proin mattis dui velit, vitae molestie lacus mollis ac. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vestibulum dignissim sagittis. Curabitur malesuada, massa ut hendrerit efficitur, massa nisi consequat dolor, sed luctus tortor eros eget elit. Suspendisse potenti. Sed quis iaculis urna. Duis vulputate euismod lorem ac tempor. Nullam et nisl sit amet erat luctus suscipit sed nec leo. Maecenas euismod rutrum dui, lobortis tempus libero molestie eget.
+         </p>
+         <p id="p6">
+         Maecenas sapien neque, consequat a sagittis vitae, lobortis ut quam. Etiam consectetur aliquet tincidunt. Aliquam non magna ipsum. Integer porttitor in nisi eget tincidunt. Integer feugiat vestibulum imperdiet. Suspendisse sed tortor id magna feugiat volutpat. Phasellus eu elit sed elit finibus dapibus. Integer sit amet turpis nulla. Morbi fermentum, ex viverra malesuada accumsan, diam urna consectetur velit, a elementum nisl metus a urna.
+         </p>
+         <p id="p7">
+         Mauris urna ex, auctor ac odio ac, sodales pulvinar ligula. Sed tristique mi quis ex facilisis dictum. Donec dapibus lorem ut maximus auctor. Vivamus aliquet eu augue et consectetur. Nulla molestie semper lectus eu pulvinar. Donec pharetra sodales turpis, quis pellentesque justo ultricies quis. Suspendisse tincidunt dolor vitae congue faucibus. Morbi dictum porttitor enim id tincidunt. Etiam facilisis congue arcu vitae suscipit. Nullam non urna mauris. Donec euismod risus at est consectetur, porta luctus justo vestibulum. Proin eu fringilla augue. Aenean cursus tempus tempus. Praesent in auctor nulla, at faucibus nisi.
+         </p>
+         <p id="p8">
+            In a sapien fermentum, bibendum felis at, vestibulum erat. Maecenas dignissim metus est, a posuere dolor lacinia id. Praesent sagittis orci ante, et pulvinar diam feugiat et. Nulla pretium nisi at ultricies faucibus. Proin viverra ultrices dui, eget accumsan nisl auctor a. Quisque non metus ex. Maecenas laoreet aliquet urna, et tincidunt neque sollicitudin et. Pellentesque condimentum tincidunt sagittis.
+         </p>
+      </div>
+      <footer>
+         <p>| Page-1</p>
+      </footer>
+   </body>
+</html>

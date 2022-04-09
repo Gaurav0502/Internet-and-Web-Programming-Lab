@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hackathon Form</title>
+        <link rel="stylesheet" href="hk.css">
+        <script src="validation.js"></script>
+    </head>
+    <body>
+        <div><b>Hackathon Registration Form</b></div>
+        <form action="result.html" onsubmit="return validate();">
+         <table cellpadding="20" cellspacing="5px">
+           <tr>
+               <td class="label">First Name</td>
+               <td><input type="text" id="fname" required></td>
+           </tr>
+           <tr>
+               <td class="label">Last Name</td>
+               <td><input type="text" id="lname" required></td>
+           </tr>
+           <tr>
+               <td class="label">Email Address</td>
+               <td><input type="email" id="email" required></td>
+           </tr>
+           <tr>
+               <td class="label">Confirm Email Address</td>
+               <td><input type="email" id="cemail" required></td>
+           </tr>
+           <tr>
+               <td class="label">City of Residence</td>
+               <td>
+                   <select id="City">
+                       <option>Mumbai</option>
+                       <option>Chennai</option>
+                       <option>Delhi</option>
+                       <option>Bangalore</option>
+                       <option>Kolkata</option>
+                    </select>
+                </td>
+           </tr>
+           <tr>
+               <td class="label">Date of Birth</td>
+               <td><input type="date" id="dob" required></td>
+           </tr>
+           <tr>
+               <td class="label">Title</td>
+               <td><input type="text" id="title" required></td>
+           </tr>
+           <tr>
+               <td class="label">Issue catered to by your project</td>
+               <td><input type="text" id="issue" required></td>
+           </tr>
+           <tr>
+               <td class="label">Language</td>
+               <td>
+                   <select id="skillset">
+                      <option>C</option>
+                      <option>Python</option>
+                      <option>Java</option>
+                      <option>C++</option>
+                      <option>Javascript</option>
+                   </select>
+               </td>
+           </tr>
+           <tr>
+               <td colspan="2"><input type="submit" value="Register" id="sbtn"></td>
+           </tr>
+        </table>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Rectangles</title>
+    </head>
+    <body>
+        <canvas id="r" width="500" height="600"></canvas>
+        <script>
+           var canvas = document.getElementById("r");
+           var ctx = canvas.getContext('2d');
+           ctx.lineWidth = "4";
+           ctx.strokeStyle = "red";
+           ctx.strokeRect(5,5,220,200);
+           ctx.lineWidth  = "36";
+           ctx.lineJoin = "round";
+           ctx.strokeStyle = "green";
+           ctx.strokeRect(180,40,110,200);
+           ctx.lineWidth = "20";
+           ctx.lineJoin = "bevel";
+           ctx.strokeStyle = "#3333ff";
+           ctx.strokeRect(105,145,230,135);
+        </script>
+    </body>
+</html>
